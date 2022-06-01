@@ -1,6 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
-import './App.css';
+import CreateGuide from './components/CreateGuide';
+import EditGuide from './components/EditGuide';
+import ViewGuide from './components/ViewGuide';
+import Search from './components/Search';
+import Home from './components/Home';
 
 function App() {
   return (
