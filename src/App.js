@@ -17,9 +17,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<CreateGuide />} />
-            <Route path="/edit/:id" element={<EditGuide />} />
+            <Route path="/:id/edit" element={<EditGuide />} />
             <Route path="/:id" element={<ViewGuide />} />
-            <Route path="/search/:search" element={<Search/>} />
+            <Route path="/search/:searchTerm" element={<Search/>} />
           </Routes>
         </Router>
       </div>
