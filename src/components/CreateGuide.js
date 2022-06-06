@@ -1,4 +1,5 @@
 const React = require('react')
+import Navbar from './navbar';
 
 function CreateGuide(){
     
@@ -26,8 +27,11 @@ function CreateGuide(){
 
     return (
         <main>
+            <div>
+                <Navbar />
+            </div>
             <h1>Create a Tutorial!</h1>
-            <form method="POST" action="/tutorial">
+            <form method="POST" action="/:id">
                 <div className="form-group">
                     <label htmlFor="title">Title</label>
                     <input className="form-control" id="title" name="title" required />

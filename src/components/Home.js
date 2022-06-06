@@ -1,3 +1,5 @@
+const React = require('react');
+
 function Home(){
     return (
         <main>
