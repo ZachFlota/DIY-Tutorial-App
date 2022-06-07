@@ -13,6 +13,7 @@ function App() {
       <header className="App-header">
         <h1>DIY Tutorial App</h1>
       </header>
+      <p className="App-intro">;{this.state.apiResponse}</p>
       <div>
         <Router>
           <Routes>
