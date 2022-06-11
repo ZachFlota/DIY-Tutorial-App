@@ -1,0 +1,84 @@
+
+
+
+
+body{
+    margin: 0;
+  
+
+}
+
+.navBar{
+
+    overflow:hidden;
+    background-color: lightgrey;
+
+
+}
+
+.navBar a{
+    display: inline-block;
+    color:black;
+ text-align: center;   
+ padding: 14px 16px;
+ font-size: 17px;
+ text-decoration: solid;
+ font-weight: bolder;
+ 
+ 
+}
+
+.navBar .search-container {
+    float: right;
+}
+
+.navBar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .navBar .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navBar .search-container button:hover {
+    background: #ccc;
+  }
+
+  h1{
+      text-align: center;
+  }
+.page-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70vh;
+
+
+
+}
+
+.flex-Container > div{
+    margin: 10px;
+    padding: 20px;
+    height: 21vh;
+    width: 20vh;
+    border-style: double;
+    border-width: 10px 10px;
+
+}
