@@ -1,0 +1,17 @@
+.nav {
+    display: inline;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.button {
+    border:1px solid black;
+    border-radius: 10px;
+}
+
+.li {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}

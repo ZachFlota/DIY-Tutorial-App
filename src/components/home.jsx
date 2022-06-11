@@ -1,7 +1,13 @@
 const React = require('react');
+import GuideItem from './GuideItem';
 
-function home() {
-  return <h1>Home</h1>;
+function Home(props) {
+  const display = props.data.map((item, index) => {
+    return <GuideItem item={item} key={index} />;
+  });
+  return <div>{display}</div>;
 }
 
-module.exports = home;
+export default Home;
+
+//module.exports = home;
