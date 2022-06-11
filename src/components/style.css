@@ -1,17 +1,28 @@
-.nav {
-    display: inline;
+.navbar {
+    display: inline-block;
     text-align: center;
     background-color: cornflowerblue;
 }
 
-.button {
+button {
+    display: inline-block;
     border:1px solid black;
     border-radius: 10px;
 }
 
-.li {
+li {
+    list-style-type: none;
     padding-left: 1.5%;
     padding-right: 1.5%;
     padding-top: 5px;
     padding-bottom: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:indianred;
 }

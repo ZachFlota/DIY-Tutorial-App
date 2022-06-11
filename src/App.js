@@ -11,19 +11,22 @@ function App() {
  return (
     <div className='App'>
       <head>
+        <link rel="stylesheet" href="./components/style.css" />
         <title>DIY Tutorial App</title>
       </head>
       <header className='App-header'>
-        <Navbar />
+        <Navbar className='navbar' />
       </header>
       <br/>
       <div>
+        {/*
         <Router>
           <Route path='/' element={<Home />} />
           <Route path='/CreateGuide' element={<CreateGuide />} />
           <Route path='/VeiwGuide' element={<VeiwGuide />} />
           <Route path='/EditGuide' element={<EditGuide />} />
         </Router>
+ */}
       </div>
     </div>
   );

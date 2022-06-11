@@ -1,3 +1,4 @@
+import { style } from '@mui/system';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -17,17 +18,17 @@ function GuideItem(props) {
     height: '20vh',
     border: '1px solid black',
     margin: '2px',
-    backgroundImage: `url(${props.item.artworkUrl100})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    //backgroundImage: `url(${props.item.artworkUrl100})`,
+    //backgroundRepeat: 'no-repeat',
+    //backgroundSize: 'cover',
     color: 'yellow',
   };
 
   const simpleView = () => {
     return (
       <div style={simpleStyle}>
-        <h3>{props.item./*name in db*/}</h3>
-        <h4>{props.item./*name in db*/}</h4>
+        <h3>{props.title.tutorials}</h3>
+        <h4>{props.content.tutorials}</h4>
       </div>
     );
   };
@@ -35,10 +36,11 @@ function GuideItem(props) {
   const detailView = () => {
     return (
       <div style={detailStyle}>
-        <h2>{props.item./*name in db*/}</h2>
+        <h2>{props.title.tutorials}</h2>
+        <image>{props.image.tutorials}</image>
         <h3>
-          <Link to={`/guide/${props.item./*name in db*/}`}>
-            {props.item./*name in db*/}
+          <Link to={`/how-to/${props.item.tutorials}`}>
+            {props.title.tutorials}
           </Link>
         </h3>
       </div>

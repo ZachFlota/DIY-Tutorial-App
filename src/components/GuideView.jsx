@@ -7,24 +7,24 @@ function GuideView() {
   const [guideData, setGuideData] = useState([]);
 
   useEffect(() => {
-    const dbr = /*database route*/;
+    const dbr = 'mongodb://localhost:27017/how-to';
     const fetchData = async () => {
       const response = await fetch(dbr);
       const resData = await response.json();
-      setsGuideData(resData.results);
+      setGuideData(resData.results);
     };
     fetchData();
   }, [id]);
 
   const justGuides = guideData.fliter(
-    (entry) => entry.collectionType === 'name in db'
+    (entry) => entry.collectionType === 'Tutorials'
   );
 
-  const renderGuides = justGuides.map((album, i) => {
+  const renderGuides = justGuides.map((tutorials, i) => {
     return (
-      <Link to={`/name in db/{name in db.collectionId}`}>
+      <Link to={`/how-to/{tutorials.collectionId}`}>
         <div key="">
-          <p>{/*name in db*/.collectionName}</p>
+          <p>{tutorials.collectionName}</p>
         </div>
       </Link>
     );
@@ -42,7 +42,7 @@ function GuideView() {
   return (
     <div>
       {guideData.length > 0 ? (
-        <h2>{guideData[0].albumName}</h2>
+        <h2>{guideData[0].tutorialsName}</h2>
       ) : (
         <h2>Loading...</h2>
       )}
