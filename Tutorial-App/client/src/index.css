@@ -27,6 +27,14 @@ div {
 
 }
 
+#register {
+  margin: auto;
+  
+  height: 250px;
+  width: 500px;
+  bottom: 100px;
+}
+
 
 
 #banner {

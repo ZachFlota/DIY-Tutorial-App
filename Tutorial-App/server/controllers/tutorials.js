@@ -1,10 +1,32 @@
 let mongoose = require('mongoose'),
     express = require('express'),
     router = express.Router();
-
-//const { useReducer } = require('react');
-//const router = require('express').Router();
 let db = require('../models/tutorials');
+let user = require('../models/user');
+
+//Create(POST) new user
+router.route('/create-user').post((req, res, next) => {
+    user.create(req.body, (error, data) => {
+        if (error) {
+            return next(error)
+        } else {
+            console.log(data)
+            res.json(data)
+        }
+    })
+})
+
+//Finds(GET) all users in the DB
+router.route('/').get((req, res) => {
+    user.find((error, data) => {
+        if (error) {
+            return next(error)
+        } else {
+            res.json(data)
+        }
+    })
+})
+
 
 //Create(POST) new tutorial
 router.route('/create').post((req, res, next) => {
@@ -15,11 +37,12 @@ router.route('/create').post((req, res, next) => {
             console.log(data)
             res.json(data)
         }
+
     })
 })
 
 //Finds(GET) all tutorials in the DB
-router.route('/').get((req, res) => {
+router.route('/tutorials/').get((req, res) => {
     db.find((error, data) => {
         if (error) {
             return next(error)

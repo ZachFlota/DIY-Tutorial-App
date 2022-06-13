@@ -9,7 +9,7 @@ function Home(){
                 <Navigation />
             </div>
             <div >
-                <img id="banner" src="https://document-export.canva.com/Oveq4/DAFDaSOveq4/19/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220612%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220612T121616Z&X-Amz-Expires=27759&X-Amz-Signature=1e8f5fdf1b1660fbfebe01d2b99d251460ce2b26df7183d1d2ff602fa023142d&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2012%20Jun%202022%2019%3A58%3A55%20GMT"
+                <img id="banner" src="https://document-export.canva.com/Oveq4/DAFDaSOveq4/19/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220613T121616Z&X-Amz-Expires=34959&X-Amz-Signature=e7b17f751ebb1730ff472618c5db412c899447f015f6c70f17e3a8c55714cec9&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2013%20Jun%202022%2021%3A58%3A55%20GMT"
                     alt="home banner">
                 </img>
             </div>

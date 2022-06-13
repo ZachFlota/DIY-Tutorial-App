@@ -1,12 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import CreateTutorial from './components/CreateGuide';
-import Tutorials from './components/Tutorials';
-import EditGuide from './components/EditGuide';
-import ViewGuide from './components/ViewGuide';
-import Search from './components/Search';
-import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './components/Login'
+import CreateUser from './components/CreateUser'
+import Home from './components/Home';
+import Tutorials from './components/Tutorials';
+import CreateTutorial from './components/CreateTutorial';
+import EditTutorial from './components/EditTutorial';
+import Search from './components/Search';
+
+
 
 
 function App() {
@@ -27,11 +30,12 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/create" element={<CreateTutorial />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/create-user" element={<CreateUser />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/tutorials" element={<Tutorials />} />
-          <Route path="/edit/:id" element={<EditGuide />} />
-          <Route path="/:id" element={<ViewGuide />} />
+          <Route path="/create" element={<CreateTutorial />} />
+          <Route path="/edit/:id" element={<EditTutorial />} />
           <Route path="/search/:search" element={<Search/>} />
         </Routes>
       </Router>
