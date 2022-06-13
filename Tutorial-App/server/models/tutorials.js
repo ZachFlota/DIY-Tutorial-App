@@ -1,11 +1,14 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const tutorialSchema = new mongoose.Schema({
+let tutorialSchema = new Schema({
     title: { type: String, required: true},
-    description: { type: String },
-    step: { type: String },
+    description: { type: String, required: true },
+    step: { type: String, required: true },
     image: { type: String },
     
+}, {
+    collection: 'tutorials'
 })
 
 module.exports = mongoose.model('Tutorial', tutorialSchema)

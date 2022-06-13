@@ -50,6 +50,7 @@ function Navigation(html) {
             <Nav className="me-auto">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/create">Create Tutorial</Nav.Link>
+                <Nav.Link href="/tutorials">Tutorials</Nav.Link>
                 <Searchbar handleSearch={handleSearch} />
             </Nav>
             </Navbar.Collapse>
