@@ -42,7 +42,7 @@ router.route('/create').post((req, res, next) => {
 })
 
 //Finds(GET) all tutorials in the DB
-router.route('/tutorials/').get((req, res) => {
+router.route('/tutorials').get((req, res) => {
     db.find((error, data) => {
         if (error) {
             return next(error)
