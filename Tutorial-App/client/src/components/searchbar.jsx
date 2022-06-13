@@ -1,5 +1,6 @@
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import React, { useState } from 'react';
+import '../index.css';
 
 function Searchbar({ props }) {
   let [searchTerm, setSearchTerm] = useState('');
@@ -13,7 +14,7 @@ function Searchbar({ props }) {
             type="text"
             placeholder="Search for Guides..."
           />
-          <div className="searchIcon">
+          <div className="searchIcon" >
             <button type="submit">{<SearchOutlinedIcon />}</button>
           </div>
         </div>

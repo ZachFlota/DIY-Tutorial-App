@@ -5,6 +5,7 @@ import EditGuide from './components/EditGuide';
 import ViewGuide from './components/ViewGuide';
 import Search from './components/Search';
 import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -18,7 +19,7 @@ function App() {
   return (
     <div className="App">
     <header className="App-header">
-      <h1>DIY Tutorial App</h1>
+      
     </header>
     
     <div>

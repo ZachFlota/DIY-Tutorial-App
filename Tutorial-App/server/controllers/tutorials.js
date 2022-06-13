@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const db = require('../models')
 
-//Home
+//Finds all tutorials in the DB
 router.get('/', (req, res) => {
     db.Tutorial.find()
     .then(tutorials => {
@@ -11,6 +11,16 @@ router.get('/', (req, res) => {
     
 
 })
+
+router.post('/', (req, res) => {
+    db.Tutorial.create(req.body)
+    .then(() => {
+        res.send(tutorials)
+    })
+
+})
+
+
 
 //Tutorial Index Page
 router.get('/:id', (req, res) => {

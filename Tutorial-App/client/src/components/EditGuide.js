@@ -1,11 +1,11 @@
 const React = require('react')
-import Navbar from './navbar';
+import Navigation from './navbar';
 
 function EditGuide(){
     return (
         <main>
             <div>
-                <Navbar />
+                <Navigation />
             </div>
             <h1>Edit Guide</h1>
         </main>

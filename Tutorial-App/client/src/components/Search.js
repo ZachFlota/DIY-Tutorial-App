@@ -1,11 +1,11 @@
 const React = require('react')
-import Navbar from './navbar';
+import Navigation from './navbar';
 
 function Search(){
     return (
         <main>
             <div>
-                <Navbar />
+                <Navigation />
             </div>
             <h1>Search</h1>
         </main>
