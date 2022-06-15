@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Navigation from './navbar';
-import Tutorial from './Tutorial';
+import TutorialPosting from './TutorialPosting';
 import '../index.css';
+
 
 export default class TutorialsIndex extends Component {
     
@@ -21,9 +22,9 @@ export default class TutorialsIndex extends Component {
         })
     }
 
-    tutorial() {
+    tutorialPost() {
         return this.state.tutorialsCollection.map((data, i) => {
-            return <Tutorial obj={data} key={i} />;
+            return <TutorialPosting obj={data} key={i} />;
         });
     }
      
@@ -37,7 +38,7 @@ export default class TutorialsIndex extends Component {
                     <h1>Tutorials</h1>
                 </div>
                 <div className="tutorialIndex">
-                    {this.tutorial()}
+                    {this.tutorialPost()}
                 </div>
             </main>
 

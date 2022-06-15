@@ -5,6 +5,7 @@ import Login from './components/Login'
 import CreateUser from './components/CreateUser'
 import Home from './components/Home';
 import TutorialsIndex from './components/TutorialsIndex';
+import ViewTutorial from './components/ViewTutorial';
 import CreateTutorial from './components/CreateTutorial';
 import EditTutorial from './components/EditTutorial';
 import Search from './components/Search';
@@ -34,6 +35,7 @@ function App() {
           <Route path="/create-user" element={<CreateUser />} />
           <Route path="/home" element={<Home />} />
           <Route path="/tutorials" element={<TutorialsIndex />} />
+          <Route path="/tutorials/:id" element={<ViewTutorial />} />
           <Route path="/create" element={<CreateTutorial />} />
           <Route path="/edit/:id" element={<EditTutorial />} />
           <Route path="/search/:search" element={<Search/>} />

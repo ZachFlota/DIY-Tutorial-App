@@ -1,15 +1,48 @@
-const React = require('react')
+import React, { Component } from 'react';
+import axios from 'axios';
+import '../index.css';
 import Navigation from './navbar';
+import Tutorial from './Tutorial'
+export default class ViewTutorial extends Component {
 
-function ViewGuide(){
-    return (
-        <main>
+    constructor(props) {
+        super(props);
+        this.state = { tutorialsCollection: [] };
+    }
+
+    componentDidMount() {
+        axios.get('http://localhost:3001/tutorials/tutorials')
+        .then(res => {
+            this.setState({ tutorialsCollection: res.data });
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+    }
+
+    tutorial() {
+        return this.state.tutorialsCollection.map((data, i) => {
+            return <Tutorial obj={data} key={i} />;
+        });
+    }
+
+
+
+
+
+    render() {
+        return (
             <div>
-                <Navigation />
+                <div>
+                    <Navigation />
+                </div>
+                <div>
+                    {this.tutorial()}
+                </div>
+                
             </div>
-            <h1>View Guide</h1>
-        </main>
-    )
+
+        )
+    }
 }
 
-export default ViewGuide

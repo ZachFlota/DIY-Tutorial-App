@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 import '../index.css';
-import Navigation from './navbar';
 
 class Tutorial extends Component {
     render() {
         return (
-            <div className="tutorial">
-                <h2> {this.props.obj.title} </h2>
-                <p> {this.props.obj.description} </p>
+            <div>
+                <h1> {this.props.obj.title} </h1>
             </div>
-                
-            
         )
     }
 }
 
 export default Tutorial;
-    
