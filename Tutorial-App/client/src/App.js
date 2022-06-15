@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/Login'
 import CreateUser from './components/CreateUser'
 import Home from './components/Home';
-import Tutorials from './components/Tutorials';
+import TutorialsIndex from './components/TutorialsIndex';
 import CreateTutorial from './components/CreateTutorial';
 import EditTutorial from './components/EditTutorial';
 import Search from './components/Search';
@@ -33,7 +33,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/create-user" element={<CreateUser />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/tutorials" element={<Tutorials />} />
+          <Route path="/tutorials" element={<TutorialsIndex />} />
           <Route path="/create" element={<CreateTutorial />} />
           <Route path="/edit/:id" element={<EditTutorial />} />
           <Route path="/search/:search" element={<Search/>} />

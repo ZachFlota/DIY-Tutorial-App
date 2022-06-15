@@ -51,3 +51,22 @@ h1 {
   color: #004aad
 }
 
+.tutorialBox {
+  margin: 0;
+  width: 1344px;
+  height: 1000px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 200px 200px 200px; 
+  grid-template-areas: "tutorial" "tutorial" "tutorial";
+
+}
+
+.tutorial {
+  margin: 1vw;
+  grid-area: tutorial;
+  float: left;
+  width: 30%;
+  height: 30%;
+  border: 1px solid black;
+}

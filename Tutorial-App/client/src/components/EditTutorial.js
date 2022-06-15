@@ -1,5 +1,6 @@
-const React = require('react')
 import Navigation from './navbar';
+const React = require('react')
+
 
 function EditTutorial(){
     return (

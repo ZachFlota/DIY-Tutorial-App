@@ -1,6 +1,7 @@
-const React = require('react');
 import Navigation from './navbar';
 import '../index.css';
+const React = require('react');
+
 
 function Home(){
     return (
