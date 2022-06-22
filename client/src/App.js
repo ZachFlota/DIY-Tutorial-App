@@ -31,9 +31,9 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/create-user" element={<CreateUser />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/tutorials" element={<TutorialsIndex />} />
           <Route path="/tutorials/:id" element={<ViewTutorial />} />
           <Route path="/create" element={<CreateTutorial />} />
