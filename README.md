@@ -38,9 +38,22 @@ Know the best way to do something? Create an account and write and share your ow
 
 ## Technical Information
 
-## Getting Started with Create React App
+This project utilizes an Express API server and a React frontend UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Installation
+From the root directory, run `npm install` to install global project dependencies.
+
+Then, from the root directory, cd into *client* and run `npm install` to install frontend project dependencies. 
+
+### Starting the Server
+
+From the root directory, cd into *server* and run `npm start` to start the Express server on PORT = 3001.
+
+### Starting the Frontend
+
+Also from the root directory, cd into *client* and run `npm start` to start the React frontend UI on PORT = 3000.
+
+
 
 ## Available Scripts
 
