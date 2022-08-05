@@ -1,40 +1,41 @@
-#DIY-Tutorial-App
+# DIY-Tutorial-App
 
-##Description
-    The DIY-Tutorial-App is the place to share and view tutorials for any task you need to complete. If someone else can do it, then so can you! Search the database of user generated tutorials to find the tutorial you're looking for. Read through user reviews to select the top rated tutorial, or choose based on project time, steps, or materials. After following the tutorial, leave feedback for the creator or share how your project turned out for other DIY-er's. 
+## Description
 
-    Know the best way do something? Create an account and write and share your own tutorials for others to use. Use the messaging feature to answer questions about your tutorial. Use reviews to improve your tutorial and interact with others who have completed projects using your tutorial. 
+The DIY-Tutorial-App is the place to share and view tutorials for any task you need to complete. If someone else can do it, then so can you! Search the database of user generated tutorials to find the tutorial you're looking for. Read through user reviews to select the top rated tutorial, or choose based on project time, steps, or materials. After following the tutorial, leave feedback for the creator or share how your project turned out for other DIY-er's. 
 
-##Demo
+Know the best way do something? Create an account and write and share your own tutorials for others to use. Use the messaging feature to answer questions about your tutorial. Use reviews to improve your tutorial and interact with others who have completed projects using your tutorial. 
+
+## Demo
 ![Demo gif](https://github.com/ZachFlota/DIY-Tutorial-App/blob/zach/client/src/assets/DIY-Demo_Gif.gif)
 
 
-##Technologies
-    *"axios": "^0.27.2",
-    *"body-parser": "^1.20.0",
-    *"bootstrap": "^5.1.3",
-    *"cors": "^2.8.5",
-    *"dotenv": "^16.0.1",
-    *"@emotion/react": "^11.9.0",
-    *"@emotion/styled": "^11.8.1",
-    *"express": "^4.18.1",
-    *"method-override": "^3.0.0",
-    *"mongoose": "^6.3.6"
-    *"@mui/icons-material": "^5.8.3",
-    *"@mui/material": "^5.8.3",
-    *"react": "^18.1.0",
-    *"react-bootstrap": "^2.4.0",
-    *"react-dom": "^18.1.0",
-    *"react-router-dom": "^6.3.0",
-    *"react-scripts": "5.0.1",
-    *"@testing-library/jest-dom": "^5.16.4",
-    *"@testing-library/react": "^13.3.0",
-    *"@testing-library/user-event": "^13.5.0",
-    *"web-vitals": "^2.1.4"
+## Technologies
+    * "axios": "^0.27.2",
+    * "body-parser": "^1.20.0",
+    * "bootstrap": "^5.1.3",
+    * "cors": "^2.8.5",
+    * "dotenv": "^16.0.1",
+    * "@emotion/react": "^11.9.0",
+    * "@emotion/styled": "^11.8.1",
+    * "express": "^4.18.1",
+    * "method-override": "^3.0.0",
+    * "mongoose": "^6.3.6"
+    * "@mui/icons-material": "^5.8.3",
+    * "@mui/material": "^5.8.3",
+    * "react": "^18.1.0",
+    * "react-bootstrap": "^2.4.0",
+    * "react-dom": "^18.1.0",
+    * "react-router-dom": "^6.3.0",
+    * "react-scripts": "5.0.1",
+    * "@testing-library/jest-dom": "^5.16.4",
+    * "@testing-library/react": "^13.3.0",
+    * "@testing-library/user-event": "^13.5.0",
+    * "web-vitals": "^2.1.4"
 
-##Technical Information
+## Technical Information
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
