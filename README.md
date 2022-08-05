@@ -109,3 +109,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 #### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Issues
+
+Currently the mongoDB is only setup locally. Therefore, CRUD operations will not work unless the database is reconfigured for your local machine. Upon deployment, the database will need to be deployed to mongoDB Atlas.
+
+When registering an account, account information is saved to the mongoDB, but currently the login functionality is not operational. 
+
+When creating a tutorial, only the first step can be added. The create tutorial form needs to be updated to include functionality to add additional steps.
+
+Clicking on the *Tutorials* link will display all tutorials currently in the database. The searchbar functionality is still in development. When completed it will allow a user to search for specific tutorials. Listed tutorials will be able to be sorted by rating, estimated time it takes to complete project, the number of steps it takes to complete the project, and the number of materials required. 
