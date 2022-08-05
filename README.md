@@ -110,6 +110,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## API Documentation
+
+### Routes
+
+| Method | Path | Purpose |
+| ------ | ---- | ------- |
+| GET | `/` | The home page |
+| POST | `/create-user` | Create a new user |
+| POST | `/create` | Create a new tutorial |
+| GET | `/tutorials` | Show all tutorials |
+| GET | `/edit/:id` | Edit form for a tutorial |
+| PUT | `/update/:id` | Make changes to a tutorial |
+| DELETE | `/delete/:id` | Delete a tutorial |
+
+### Database
+
+#### Tutorials
+
+| Field | Type |
+| ----- | ---- |
+| _id | Object ID |
+| title | String |
+| description | String |
+| step | String |
+| image | String |
+
+#### User
+
+| Field | Type |
+| ----- | ---- |
+| _id | Object ID |
+| firstName | String |
+| lastName | String |
+| email | String |
+| password | String |
+
+#### Comments 
+
+| Field | Type |
+| ----- | ---- |
+| _id | Object ID |
+| author | String |
+| stars | Number |
+| content | String |
+
 ## Issues
 
 Currently the mongoDB is only setup locally. Therefore, CRUD operations will not work unless the database is reconfigured for your local machine. Upon deployment, the database will need to be deployed to mongoDB Atlas.
