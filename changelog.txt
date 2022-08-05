@@ -1,0 +1,33 @@
+- update readme.md
+- update readme.md
+- update readme.md
+- update readme.md
+- Update readme.md
+- update readme.md
+- update readme.md
+- upload demo gif
+- fix image issues, include scss
+- change load page to home page vs login
+- cleanup file org
+- cleaned up file org
+- add view tutorial page
+- create tutorial view page and add css elements
+- create user connected to db
+- create user forms and routing
+- create tutorial form connected to db
+- add css styling
+- new project file with backend
+- add stub routes and express
+- add search and navbar
+- createGuide form sample
+- start tutorial form, merge routes
+- create comment seeder
+- test seeder files with db
+- update model and seeder files
+- connect mongo, add seeder files
+- test
+- Merge https://github.com/ZachFlota/DIY-Tutorial-App updating with preview images
+- added basic page layout images
+- create folders/files
+- replace app.js content
+- create react app
