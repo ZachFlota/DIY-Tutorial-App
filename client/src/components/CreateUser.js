@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Navigation from './navbar'
 import '../index.css';
 
 export default class CreateUser extends Component {
@@ -59,39 +60,46 @@ export default class CreateUser extends Component {
     
     render() {
         return (
-            <Form id="register" onSubmit={this.onSubmit} action="http://localhost:3000/home">
-                    <Row>
-                        <Col>
-                            <Form.Group className="mb-3" controlid="firstName">
-                                <Form.Label>First Name</Form.Label>
-                                <Form.Control type="text" value={this.state.firstName} onChange={this.onChangeFirstName} placeholder="Enter First Name" required />
-                            </Form.Group>
-                        </Col>
-                        <Col>
-                            <Form.Group className="mb-3" controlid="lastName">
-                                <Form.Label>Last Name</Form.Label>
-                                <Form.Control type="text" value={this.state.lastName} onChange={this.onChangeLastName} placeholder="Enter Last Name" required />
-                            </Form.Group>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Form.Group className="mb-3" controlid="email">
-                            <Form.Label>Email Address</Form.Label>
-                            <Form.Control type="email" value={this.state.email} onChange={this.onChangeEmail} label="Enter Email" />
-                        </Form.Group>
-                    </Row>
-                    <Row>
-                        <Form.Group className="mb-3" controlid="password">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" value={this.state.password} onChange={this.onChangePassword} placeholder="Create Password" />
-                        </Form.Group>
-                    </Row>                    
+            <main>
+                <div>
+                    <Navigation />
+                </div>
+                <div>
+                    <Form id="register" onSubmit={this.onSubmit} action="http://localhost:3000/home">
+                            <Row>
+                                <Col>
+                                    <Form.Group className="mb-3" controlid="firstName">
+                                        <Form.Label>First Name</Form.Label>
+                                        <Form.Control type="text" value={this.state.firstName} onChange={this.onChangeFirstName} placeholder="Enter First Name" required />
+                                    </Form.Group>
+                                </Col>
+                                <Col>
+                                    <Form.Group className="mb-3" controlid="lastName">
+                                        <Form.Label>Last Name</Form.Label>
+                                        <Form.Control type="text" value={this.state.lastName} onChange={this.onChangeLastName} placeholder="Enter Last Name" required />
+                                    </Form.Group>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Form.Group className="mb-3" controlid="email">
+                                    <Form.Label>Email Address</Form.Label>
+                                    <Form.Control type="email" value={this.state.email} onChange={this.onChangeEmail} label="Enter Email" />
+                                </Form.Group>
+                            </Row>
+                            <Row>
+                                <Form.Group className="mb-3" controlid="password">
+                                    <Form.Label>Password</Form.Label>
+                                    <Form.Control type="password" value={this.state.password} onChange={this.onChangePassword} placeholder="Create Password" />
+                                </Form.Group>
+                            </Row>                    
 
 
-                    <Button variant="primary" type="submit">
-                        Create Account
-                    </Button>
-            </Form>
+                            <Button variant="primary" type="submit">
+                                Create Account
+                            </Button>
+                    </Form>
+                </div>
+            </main>
 
         )
     }

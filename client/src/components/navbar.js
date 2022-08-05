@@ -55,6 +55,8 @@ function Navigation(html) {
                 <Nav.Link href="/create">Create Tutorial</Nav.Link>
                 <Nav.Link href="/tutorials">Tutorials</Nav.Link>
                 <Searchbar handleSearch={handleSearch} />
+                <Nav.Link href="/login">Login</Nav.Link>
+                <Nav.Link href="/create-user">Register</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>
